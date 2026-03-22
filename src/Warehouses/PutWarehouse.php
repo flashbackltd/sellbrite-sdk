@@ -11,7 +11,7 @@ class PutWarehouse extends Core
     /**
      * @param array $warehouseInfoArr Array that holds all the information for the associated warehouse
      */
-    public function sendRequest(string $warehouseUuid = null, array $warehouseInfoArr = null)
+    public function sendRequest(?string $warehouseUuid = null, ?array $warehouseInfoArr = null)
     {
         if (is_null($warehouseUuid) === true || empty($warehouseUuid) === true)
             throw new \Exception('You have to supply a warehouse uuid for this API request');

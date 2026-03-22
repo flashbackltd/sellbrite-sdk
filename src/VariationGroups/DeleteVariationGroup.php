@@ -16,7 +16,7 @@ class DeleteVariationGroup extends Core
      * @param integer $limit Number of results per page
      * @param array   $skuArr An array of SKUs
      */
-    public function sendRequest(string $sku = null)
+    public function sendRequest(?string $sku = null)
     {
         if (is_null($sku) === true || empty($sku) === true || is_string($sku) === false)
             throw new \Exception('You failed to supply a SKU.');

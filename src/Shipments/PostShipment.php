@@ -11,7 +11,7 @@ class PostShipment extends Core
     /**
      *
      */
-    public function sendRequest(array $shipmentArray = null)
+    public function sendRequest(?array $shipmentArray = null)
     {
         // Build the API endpoint
         $url = self::BASE_URI . 'shipments';

@@ -18,7 +18,7 @@ class PostInventory extends Core
      *
      * @return string|object
      */
-    public function sendRequest(array $invArr = null)
+    public function sendRequest(?array $invArr = null)
     {
         // Build the API endpoint
         $url = self::BASE_URI . 'inventory';

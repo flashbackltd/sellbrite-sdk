@@ -26,14 +26,14 @@ class GetWarehouseFulfillments extends Core
      * @return object|string
      */
     public function sendRequest(
-        string $warehouseUuid = null,
-        int $page = null,
-        int $limit = null,
-        string $min_ordered_at = null,
-        string $max_ordered_at = null,
-        string $sb_status = null,
-        string $sb_payment_status = null,
-        string $shipment_status = null
+        ?string $warehouseUuid = null,
+        ?int $page = null,
+        ?int $limit = null,
+        ?string $min_ordered_at = null,
+        ?string $max_ordered_at = null,
+        ?string $sb_status = null,
+        ?string $sb_payment_status = null,
+        ?string $shipment_status = null
     ) {
         if (is_null($warehouseUuid) === true || empty($warehouseUuid) === true)
             throw new \Exception('You have to supply a warehouse uuid for this API request');

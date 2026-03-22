@@ -20,7 +20,7 @@ class PatchInventory extends Core
     * @throws \Exception
     * @throws \GuzzleHttp\Exception\GuzzleException
     */
-    public function sendRequest(array $invArr = null)
+    public function sendRequest(?array $invArr = null)
     {
         if (count($invArr['inventory']) > 50)
             throw new \Exception("You may only PATCH up to 50 individual inventories at a time.");

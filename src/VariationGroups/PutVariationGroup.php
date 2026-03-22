@@ -20,11 +20,11 @@ class PutVariationGroup extends Core
      * @param array   $images Array of image URLs
      */
     public function sendRequest(
-        string $sku = null,
-        string $name = null,
+        ?string $sku = null,
+        ?string $name = null,
         array $childSKUs = array(),
         array $variationAttr = array(),
-        string $description = null,
+        ?string $description = null,
         array $images = array()
     ) {
         if (is_null($sku) === true || empty($sku) === true || is_string($sku) === false)

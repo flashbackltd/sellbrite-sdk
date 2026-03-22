@@ -15,7 +15,7 @@ class PostProduct extends Core
      * @param string $sku The SKU of the product
      * @param array $productInfoArr An array containing all the info related to the product
      */
-    public function sendRequest(string $sku = null, array $productInfoArr = null)
+    public function sendRequest(?string $sku = null, ?array $productInfoArr = null)
     {
         if (is_null($sku) === true || empty($sku) === true || is_string($sku) === false)
             throw new \Exception('You failed to supply a SKU.');

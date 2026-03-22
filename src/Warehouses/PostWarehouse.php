@@ -11,7 +11,7 @@ class PostWarehouse extends Core
     /**
      * @param array $warehouseInfoArr Array that holds all the information for the associated warehouse
      */
-    public function sendRequest(array $warehouseInfoArr = null)
+    public function sendRequest(?array $warehouseInfoArr = null)
     {
         if (is_null($warehouseInfoArr) === true || empty($warehouseInfoArr) === true)
             throw new \Exception('You have to supply an appropriate warehouse information array.');

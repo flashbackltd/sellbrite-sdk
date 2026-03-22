@@ -24,14 +24,14 @@ class GetAllInventory extends Core
      * @return object|string
      */
     public function sendRequest(
-        int $page = null,
-        int $limit = null,
-        string $warehouse_uuid = null,
-        string $sku = null,
-        string $created_at_min = null,
-        string $created_at_max = null,
-        string $updated_at_min = null,
-        string $updated_at_max = null
+        ?int $page = null,
+        ?int $limit = null,
+        ?string $warehouse_uuid = null,
+        ?string $sku = null,
+        ?string $created_at_min = null,
+        ?string $created_at_max = null,
+        ?string $updated_at_min = null,
+        ?string $updated_at_max = null
     ) {
         // Build the API endpoint
         $url = self::BASE_URI . 'inventory';

@@ -13,7 +13,7 @@ class GetOrder extends Core
      *
      * @return string
      */
-    public function sendRequest(string $sb_order_seq = null) {
+    public function sendRequest(?string $sb_order_seq = null) {
 
         if (is_null($sb_order_seq) === true)
             throw new \Exception('You failed to supply a Sellbrite Order Sequence number.');

@@ -25,13 +25,13 @@ class GetAllOrders extends Core
      * @return object|string
      */
     public function sendRequest(
-        int $page = null,
-        int $limit = null,
-        string $min_ordered_at = null,
-        string $max_ordered_at = null,
-        string $sb_status = null,
-        string $sb_payment_status = null,
-        string $shipment_status = null
+        ?int $page = null,
+        ?int $limit = null,
+        ?string $min_ordered_at = null,
+        ?string $max_ordered_at = null,
+        ?string $sb_status = null,
+        ?string $sb_payment_status = null,
+        ?string $shipment_status = null
     ) {
         // Build the API endpoint
         $url = self::BASE_URI . 'orders';

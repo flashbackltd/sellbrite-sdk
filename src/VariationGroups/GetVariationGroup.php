@@ -17,8 +17,8 @@ class GetVariationGroup extends Core
      * @param array   $skuArr An array of SKUs
      */
     public function sendRequest(
-        int $page = null,
-        int $limit = null,
+        ?int $page = null,
+        ?int $limit = null,
         array $skuArr = []
     ) {
         // Build the API endpoint
